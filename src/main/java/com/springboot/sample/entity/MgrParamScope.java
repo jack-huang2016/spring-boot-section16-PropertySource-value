@@ -21,7 +21,7 @@ import org.springframework.stereotype.Component;
  * 
  */
 @Component
-@PropertySource(value = "classpath:user.properties")
+@PropertySource(value = {"classpath:user.properties"},ignoreResourceNotFound = false, encoding = "UTF-8")
 public class MgrParamScope implements Serializable {
     /**
 	 * 
